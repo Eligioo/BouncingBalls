@@ -1,16 +1,13 @@
 ﻿open System
-
-let dt  = 0.1
-let g   = -9.81
+open Velocity
 
 let simulation_step list =
     let list' = list |> List.map(fun ((lx, ly),(vx,vy)) ->
         let ly',vy' =
-            if ly < 0.0 then
-                (0.0,-vy*0.7)
-            else
-                (ly+vy*dt, vy+g*dt)
-        (lx, ly'),(vx,vy')
+            compute_y_velocity(ly, vy)
+        let lx', vx' =
+            compute_x_velocity(lx, vx)
+        (lx', ly'),(vx',vy')
         )
     list'
 
@@ -36,6 +33,6 @@ let rec simulation list =
 
 //List as parameter contains 2 tuples per element.
 //Containing de x and y location. And the velocity.
-let balls = [(10.0,5.0),(0.0,-2.0);(20.0,20.0),(0.0,-2.0)]
+let balls = [(5.0,15.0),(16.0,-2.0)]
 
 do simulation balls    

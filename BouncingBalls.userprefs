@@ -1,1 +1,13 @@
-﻿<Properties StartupItem="BouncingBalls/BouncingBalls.fsproj" />
+﻿<Properties StartupItem="BouncingBalls/BouncingBalls.fsproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BouncingBalls/Program.fs">
+    <Files>
+      <File FileName="BouncingBalls/Velocity.fs" Line="1" Column="1" />
+      <File FileName="BouncingBalls/Program.fs" Line="35" Column="34" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
